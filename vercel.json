@@ -9,7 +9,7 @@
             "use": "@vercel/static"
         }
     ],
-    "rewrites": [
+    "redirects": [
         {
             "source": "/add",
             "destination": "bulid/index.html"
