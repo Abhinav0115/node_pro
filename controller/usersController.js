@@ -1,5 +1,8 @@
 const fs = require("fs");
-const data = JSON.parse(fs.readFileSync("./public/data.json", "utf-8"));
+const path = require("path");
+const data = JSON.parse(
+    fs.readFileSync(path.resolve(__dirname,"../public", "data.json"), "utf-8")
+);
 let usersList = data.users;
 
 //create POST /users
