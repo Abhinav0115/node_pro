@@ -21,11 +21,11 @@
         },
         {
             "src": "/add",
-            "dest": "bulid/index.html"
+            "dest": "build/index.html"
         },
         {
             "src": "/",
-            "dest": "bulid/index.html"
+            "dest": "build/index.html"
         },
         {
             "src": "/(.+)",
