@@ -1,38 +1,35 @@
 {
+    "version": 2,
     "builds": [
         {
-            "source": "index.js",
+            "src": "index.js",
             "use": "@vercel/node"
         },
         {
-            "source": "build/**",
+            "src": "build/**",
             "use": "@vercel/static"
         }
     ],
-    "redirects": [
+    "routes": [
         {
-            "source": "/add",
-            "destination": "bulid/index.html"
+            "src": "/products",
+            "dest": "index.js"
         },
         {
-            "source": "/add",
-            "destination": "bulid/index.html"
+            "src": "/products/(.*)",
+            "dest": "index.js"
         },
         {
-            "source": "/products",
-            "destination": "index.js"
+            "src": "/add",
+            "dest": "bulid/index.html"
         },
         {
-            "source": "/products/(.*)",
-            "destination": "index.js"
+            "src": "/",
+            "dest": "bulid/index.html"
         },
         {
-            "source": "/",
-            "destination": "bulid/index.html"
-        },
-        {
-            "source": "/(.+)",
-            "destination": "build/$1"
+            "src": "/(.+)",
+            "dest": "build/$1"
         }
     ]
 }
