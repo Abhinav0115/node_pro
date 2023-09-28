@@ -24,6 +24,10 @@
             "dest": "bulid/index.html"
         },
         {
+            "src": "/add",
+            "dest": "bulid/index.html"
+        },
+        {
             "src": "/(.+)",
             "dest": "build/$1"
         }
