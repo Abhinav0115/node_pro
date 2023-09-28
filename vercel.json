@@ -16,12 +16,12 @@
             "dest": "index.js"
         },
         {
-            "src": "/products/(.*)",
-            "dest": "index.js"
-        },
-        {
             "src": "/add",
             "dest": "bulid/index.html"
+        },
+        {
+            "src": "/products/(.*)",
+            "dest": "index.js"
         },
         {
             "src": "/",
