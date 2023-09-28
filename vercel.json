@@ -20,11 +20,11 @@
             "dest": "index.js"
         },
         {
-            "src": "/",
+            "src": "/add",
             "dest": "bulid/index.html"
         },
         {
-            "src": "/add",
+            "src": "/",
             "dest": "bulid/index.html"
         },
         {
