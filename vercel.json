@@ -1,11 +1,11 @@
 {
     "builds": [
         {
-            "src": "index.js",
+            "source": "index.js",
             "use": "@vercel/node"
         },
         {
-            "src": "build/**",
+            "source": "build/**",
             "use": "@vercel/static"
         }
     ],
@@ -13,28 +13,26 @@
         {
             "source": "/add",
             "destination": "bulid/index.html"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/add",
-            "dest": "bulid/index.html"
         },
         {
-            "src": "/products",
-            "dest": "index.js"
+            "source": "/add",
+            "destination": "bulid/index.html"
         },
         {
-            "src": "/products/(.*)",
-            "dest": "index.js"
+            "source": "/products",
+            "destination": "index.js"
         },
         {
-            "src": "/",
-            "dest": "bulid/index.html"
+            "source": "/products/(.*)",
+            "destination": "index.js"
         },
         {
-            "src": "/(.+)",
-            "dest": "build/$1"
+            "source": "/",
+            "destination": "bulid/index.html"
+        },
+        {
+            "source": "/(.+)",
+            "destination": "build/$1"
         }
     ]
 }
