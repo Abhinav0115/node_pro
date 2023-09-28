@@ -17,10 +17,6 @@
     ],
     "routes": [
         {
-            "src": "/add",
-            "dest": "bulid/index.html"
-        },
-        {
             "src": "/products",
             "dest": "index.js"
         },
